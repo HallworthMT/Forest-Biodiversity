@@ -1,0 +1,14 @@
+# Metadata for the Climate Velocity and Forest Fragmentation 
+
+residenceTimes_climate_variables.csv
+ - File that contains the time (in years) that the current climate is projected to remain similar in the 5km bounding box around
+   the long-term study sites. The columns represent the different variables (tmin, tmax, ppt, dsi[drought suseptibility index]) 
+   for the two months (Jan, Jun). For completeness, I've included both the magnitude of change (voccMag) and the direction of change (voccAng).
+   The residence time for the direction of change is meaningless here. However, the magnitude of change and the projected residence time (in years)
+   can be a helpful metric to compare across sites/regions. 
+   
+Gradient_Climate_Velocities.tif - geotiff file
+ - Stacked raster (i.e., many layers) that have the magnitude of change (km/yr, voccMag) and direction of change (deg, voccAng) for 
+   each of the climate variables (tmin, tmax, ppt, dsi) in the two months (Jan, Jun). Climate data were obtained from TeraClim (# Monthly climate data 
+  # https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_TERRACLIMATE #). Data from 1990-2024 were used to calculate
+  climate velocity. Climate data were accessed in Google Earth Engine via R. Climate velocity was calculated using the VOCC R package.  
