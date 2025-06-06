@@ -2,7 +2,7 @@
 
 residenceTimes_climate_variables.csv
  - File that contains the time (in years) that the current climate is projected to remain similar in the 5km bounding box around
-   the long-term study sites. The columns represent the different variables (tmin, tmax, ppt, dsi[drought suseptibility index]) 
+   the long-term study sites. Each row corresponds with a study site where I used the siteID. The columns represent the different variables (tmin, tmax, ppt, dsi[drought suseptibility index]) 
    for the two months (Jan, Jun). For completeness, I've included both the magnitude of change (voccMag) and the direction of change (voccAng).
    The residence time for the direction of change is meaningless here. However, the magnitude of change and the projected residence time (in years)
    can be a helpful metric to compare across sites/regions. 
